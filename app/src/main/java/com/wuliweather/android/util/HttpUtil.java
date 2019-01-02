@@ -14,4 +14,5 @@ public class HttpUtil {//OkHttp封装类，发送http协议请求调用sendOkHtt
         Request request = new Request.Builder().url(address).build();//传入请求地址
         client.newCall(request).enqueue(callback);//回调处理服务器响应
     }
+
 }

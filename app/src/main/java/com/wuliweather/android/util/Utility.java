@@ -39,6 +39,7 @@ public class Utility {
         }
         return false;
     }
+
     /**
      * 解析和处理服务器返回的市级数据
      */
@@ -61,6 +62,7 @@ public class Utility {
         }
         return  false;
     }
+
     /**
      * 解析处理器返回的县级数据
      */
@@ -76,12 +78,14 @@ public class Utility {
                     county.setCityId(cityId);
                     county.save();
                 }
+                return true;
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
         return false;
     }
+
     /**
      * 将返回的JSON数据解析成Weather实体类
      */
